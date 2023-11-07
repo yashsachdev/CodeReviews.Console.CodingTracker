@@ -1,0 +1,9 @@
+version: '4.24.0'
+services:
+    db:
+        container_name: sql_server_db
+        build:
+            context: .
+            dockerfile: dockerfile
+        ports:
+            - '1433:1433'
